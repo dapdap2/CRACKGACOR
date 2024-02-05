@@ -1,5 +1,5 @@
 # SAITAMA V2 CRARCK INDONESIA 
-![template_s](https://github.com/LuciverXploit/SaitamaV2/blob/main/img/20240205_060344.jpg)
+![template_s](https://github.com/dapdap2/CRACKGACOR/blob/main/img/20240205_060344.jpg)
 # PENGERTIAN DARI CRACK FACEBOOK
 ### Dalam konteks perangkat lunak, "crack" merujuk pada tindakan ilegal untuk menghapus atau melewati proteksi lisensi perangkat lunak. Ini sering dilakukan untuk mendapatkan akses tanpa membayar atau menggunakan versi berlisensi. Perlu diingat bahwa melakukan tindakan semacam itu melanggar hukum dan etika penggunaan perangkat lunak.
 # PENGERTIAN BRUTE FORCE FACEBOOK
@@ -12,22 +12,22 @@
   >> apt update -y && apt upgrade -y
   >> apt install python
   >> pkg install git python-pip
-  >> git clone --depth 1 https://github.com/LuciverXploit/SaitamaV2.git
-  >> cd SaitamaV2
-  >> python Saitama.py
+  >> git clone --depth 1 https://github.com/dapdap2/CRACKGACOR.git
+  >> cd CRACKGACOR
+  >> python GACOR.py
   ```
   ### JALANKAN ULANG SCRIPTNYA
   
     ```
-    >> cd SaitamaV2
-    >> python Saitama.py
+    >> cd CRACKGACOR
+    >> python GACOR.py
     ```
 # SCREENSHOT
 ### Tampilan
-![template_s](https://github.com/LuciverXploit/SaitamaV2/blob/main/img/Picsart_24-02-05_05-50-43-365.jpg)
+![template_s](https://github.com/dapdap2/CRACKGACOR/blob/main/img/Picsart_24-02-05_05-50-43-365.jpg)
 ### Metode
-![template_s](https://github.com/LuciverXploit/SaitamaV2/blob/main/img/Picsart_24-02-05_05-51-08-424.jpg)
+![template_s](https://github.com/dapdap2/CRACKGACOR/blob/main/img/Picsart_24-02-05_05-51-08-424.jpg)
 # INFORMASI SCRIPT
-### Saitama Crack Adalah Script Crack FB dari Brayen yang di modifikasi oleh LuciverXploit Yang terinspirasi daru anime dari One Puch Man.
+### Saitama Crack Adalah Script Crack FB dari Brayen yang di modifikasi oleh LuciverXploit Yang terinspirasi daru anime dari dapdap
 # DONASI 
-### HUBUNGI LUCIVERXPLOIT DI GMAILNYA YANG ADA DI HALAMAN DEPAN
+### HUBUNGI DAPDAP DI 082137944046
