@@ -1,4 +1,4 @@
-# SAITAMA V2 CRARCK INDONESIA 
+# DAPDAP CRACK INDONESIA 
 ![template_s](https://github.com/dapdap2/CRACKGACOR/blob/main/img/20240205_060344.jpg)
 # PENGERTIAN DARI CRACK FACEBOOK
 ### Dalam konteks perangkat lunak, "crack" merujuk pada tindakan ilegal untuk menghapus atau melewati proteksi lisensi perangkat lunak. Ini sering dilakukan untuk mendapatkan akses tanpa membayar atau menggunakan versi berlisensi. Perlu diingat bahwa melakukan tindakan semacam itu melanggar hukum dan etika penggunaan perangkat lunak.
