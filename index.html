@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pembayaran Davin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.05);
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.1);
+      padding: 30px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      color: #00ffff;
+    }
+    p {
+      margin-bottom: 30px;
+      color: #ddd;
+    }
+    .pay-option {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 20px;
+    }
+    .pay-button {
+      background: rgba(0, 255, 255, 0.1);
+      border: 2px solid #00ffff;
+      border-radius: 15px;
+      padding: 20px 10px;
+      color: #fff;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .pay-button:hover {
+      background: #00ffff;
+      color: #000;
+      transform: scale(1.05);
+    }
+    .icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    .footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Pembayaran Davin</h1>
+    <p>Pilih metode pembayaran di bawah ini:</p>
+    <div class="pay-option">
+      <div class="pay-button" onclick="generateQRIS(5000)"><div class="icon">📱</div>PAY DANA</div>
+      <div class="pay-button" onclick="generateQRIS(10000)"><div class="icon">💳</div>GOPAY</div>
+      <div class="pay-button" onclick="generateQRIS(20000)"><div class="icon">🏦</div>SEABANK</div>
+      <div class="pay-button" onclick="generateQRIS(30000)"><div class="icon">🔄</div>QRIS ALL PAY</div>
+    </div>
+    
+    <h2 style="margin-top:50px;color:#00ffff">Atau Pembayaran Manual:</h2>
+    <button onclick="toggleManual()" style="margin-top:10px;padding:10px 20px;background:#00ffff;color:#000;border:none;border-radius:10px;cursor:pointer;font-weight:bold;">Lihat Info Transfer</button>
+    <div id="manual-section" style="display:none;text-align:left;margin-top:20px;">
+      <p><strong>DANA:</strong> 081225468225<br><em>a.n DEWI ARUM SEKAR WATI</em></p>
+      <p><strong>GOPAY:</strong> 087760260066<br><em>a.n DEWI ARUM SEKAR WATI</em></p>
+      <p><strong>SEABANK:</strong> 901402365909<br><em>a.n DEWI ARUM SEKAR WATI</em></p>
+      <p style="margin-top:10px;color:#aaa">Setelah transfer, kirim bukti ke admin via WhatsApp/Telegram.</p>
+    </div>
+    <script>
+      function toggleManual() {
+        const el = document.getElementById('manual-section');
+        el.style.display = el.style.display === 'none' ? 'block' : 'none';
+      }
+    </script>
+
+  <div class="footer">&copy; 2025 Davin Payment Gateway. All rights reserved.</div>
+  </div>
+  <script>
+    async function generateQRIS(amount) {
+      const res = await fetch('/create-qris', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ amount })
+      });
+      const data = await res.json();
+      if (data && data.qr_url) {
+        window.open(data.qr_url, '_blank');
+      } else {
+        alert('Gagal membuat QRIS');
+      }
+    }
+  </script>
+</body>
+</html>
